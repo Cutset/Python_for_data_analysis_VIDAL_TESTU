@@ -1,5 +1,8 @@
 # Python_for_data_analysis_VIDAL_TESTU
 
+WARNING : the notebook cannot be displayed, use this link to visualize it properly : https://nbviewer.org/github/Cutset/Python_for_data_analysis_VIDAL_TESTU/blob/main/PythonForDataScience_project_VIDAL_Sara_TESTU_Constantin.ipynb
+(Note that the plotly express graphs cannot be displayed)
+
 Authors : VIDAL Sara & TESTU Constantin (A4 DIA7)
 
 Group project at the end of the semester for the following course : Python for data analysis.
