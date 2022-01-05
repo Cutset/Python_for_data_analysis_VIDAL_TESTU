@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+
+{% block page_content %}
+
+<div class= 'container'>
+    <h1>Our final model</h1>
+    <p class="text-justify">The model with wich we obtained the best results is the Adaptive Boosting Classifier. </p>
+    <p class="text-justify">We tuned it with a GridSearchCV by varying the hyperparameter n_estimators (number of trees) between these values {50, 100, 200, 300} and with a cv of 5.</p>
+    <p class="text-justify">After doing our GridSearchCV our best model was obtained with 100 trees</p>
+    </hl>
+    
+    <h3>Classification report : </h3>
+    <p class="text-justify"></p>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th colspan="2">Classification report</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td>precision</td>
+                <td>recall</td>
+                <td>f1-score</td>
+                <td>support</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>{{cv['0']['precision']}}</td>
+                <td>{{cv['0']['recall']}}</td>
+                <td>{{cv['0']['f1-score']}}</td>
+                <td>{{cv['0']['support']}}</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>{{cv['1']['precision']}}</td>
+                <td>{{cv['1']['recall']}}</td>
+                <td>{{cv['1']['f1-score']}}</td>
+                <td>{{cv['1']['support']}}</td>
+            </tr>
+            <tr>
+                <td>weighted avg</td>
+                <td>{{cv['weighted avg']['precision']}}</td>
+                <td>{{cv['weighted avg']['recall']}}</td>
+                <td>{{cv['weighted avg']['f1-score']}}</td>
+                <td>{{cv['weighted avg']['support']}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    </hr>
+    <h5> Accuracy : {{cv['accuracy']}}</h5>
+
+    <h3>Confusion matrix : </h3>
+    <p class="text-justify"></p>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th colspan="2">Confusion matrix</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td>0</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>{{cm[0][0]}}</td>
+                <td>{{cm[0][1]}}</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>{{cm[1][0]}}</td>
+                <td>{{cm[1][1]}}</td>
+            </tr>
+          </tbody>
+    </table>
+
+    <h3>Roc Curve : </h3>
+    <p class="text-justify"></p>
+    <img src="{{roc}}" alt="Error : can't load roc curve"/>
+
+
+</div>
+
+{% endblock %}
