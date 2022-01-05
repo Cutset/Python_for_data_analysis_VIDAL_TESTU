@@ -1,7 +1,10 @@
 # Python_for_data_analysis_VIDAL_TESTU
 
-WARNING : the notebook cannot be displayed, use this link to visualize it properly : https://nbviewer.org/github/Cutset/Python_for_data_analysis_VIDAL_TESTU/blob/main/PythonForDataScience_project_VIDAL_Sara_TESTU_Constantin.ipynb
+WARNING 1: the notebook cannot be displayed, use this link to visualize it properly : 
+https://nbviewer.org/github/Cutset/Python_for_data_analysis_VIDAL_TESTU/blob/main/PythonForDataScience_project_VIDAL_Sara_TESTU_Constantin.ipynb
 (Note that the plotly express graphs cannot be displayed)
+
+WARNING 2: The API file was too heavy for GitHub, so the files are dispatched in the repository.
 
 Authors : VIDAL Sara & TESTU Constantin (A4 DIA7)
 
