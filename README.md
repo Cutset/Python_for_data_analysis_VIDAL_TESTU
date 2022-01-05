@@ -1,4 +1,7 @@
 # Python_for_data_analysis_VIDAL_TESTU
+
+Authors : VIDAL Sara & TESTU Constantin (A4 DIA7)
+
 Group project at the end of the semester for the following course : Python for data analysis.
 
 We picked the News Popularity Dataset. The goal was to pedict the popularity (measured by its number of shares) of articles from a numeric media called Mashable. 
